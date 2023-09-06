@@ -1,0 +1,194 @@
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card Styling */
+
+.card {
+    background-color: white;
+    width: 850px;
+    border-radius: 1.25em;
+    display: flex;
+}
+
+/* Result Card */
+
+.result {
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.25em;
+    padding: 0 2em;
+}
+
+h2 {
+    font-size: 1.25em;
+    padding: 0.5em 0;
+}
+
+p, h2 {
+    color: hsl(241, 100%, 89%);
+}
+
+h1, .score p:first-child {
+    color: white;
+}
+
+.score {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    margin: 0 auto;
+}
+
+.score p {
+    margin: 0;
+    padding: 0;
+}
+
+.score p:first-child {
+    margin-top: 50px;
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin: 1em 0;
+}
+
+p {
+    padding: 0 2.5em;
+    margin: 0 0 3em 0;
+}
+
+/* Summary Card */
+
+.summary {
+    flex: 1;
+    padding: 0 1em;
+}
+
+.summary h2, ul span b {
+    color: hsl(224, 30%, 27%);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    border-radius: 0.5em;
+    line-height: 1em;
+    margin-bottom: .7em;
+    font-weight: 700;
+    width: 90%;
+}
+
+ul li#reaction {
+    background-color: hsla(0, 100%, 67%, 0.1);
+    color: hsl(0, 100%, 67%);
+}
+
+ul li#memory {
+    background-color: hsla(39, 100%, 56%, 0.1);
+    color: hsl(39, 100%, 56%);
+}
+
+ul li#verbal {
+    background-color: hsla(166, 100%, 37%, 0.1);
+    color: hsl(166, 100%, 37%);
+}
+
+ul li#visual {
+    background-color: hsla(234, 85%, 45%, 0.1);
+    color: hsl(234, 85%, 45%);
+}
+
+ul span {
+    float: right;
+    color: hsla(224, 30%, 27%, 0.5);
+}
+
+ul li {
+    padding: 1em;
+}
+
+ul img {
+    padding-right: 1em;
+}
+
+/* Button */
+
+button {
+    color: white;
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 5em;
+    width: 100%;
+    height: 3em;
+    border: none;
+    margin: 2em 0;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+button:hover {
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    cursor: pointer;
+}
+
+@media screen and (max-width: 550px) {
+    .card {
+        border-radius: 0 0 1.2em 1.2em;
+        min-width: 375px;
+        flex-direction: column;
+        overflow: scroll;
+    }
+
+    .score {
+        height: 125px;
+        width: 125px;
+    }
+    .result {
+        border-radius: 0 0 1.2em 1.2em;
+        padding-bottom: 2em;
+    }
+
+    h1 {
+        margin: .75em 0;
+        padding: 0;
+    }
+
+    h2 {
+        margin: 0;
+        padding: 1em 0;
+    }
+
+    p {
+        padding: 0;
+        margin: 0;
+    }
+
+    .score p:first-child {
+        font-size: 3em;
+        margin-top: 0.5em;
+    }
+}
