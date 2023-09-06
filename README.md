@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://github.com/soundsmetallic/result_summary_component)
+- Live Site URL: [Live site](https://soundsmetallic.github.io/result_summary_component/)
 
 ## My process
 - Import the fonts.
@@ -43,4 +43,4 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@soundsmetallic](https://www.frontendmentor.io/profile/sondsmetallic)
